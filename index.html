@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portofolio for Developer Mohamed Bediwe">
+    <!-- Meta tag to change theme color -->
+    <meta name="theme-color" content="#3a6cf4">
+    <!-- Link tag to change the website icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
     <title>Mohamed Bediwe</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,8 +19,9 @@
     <!-- Start Header -->
     <header>
         <div class="container">
-            <h2 class="logo">Bediwe</h2>
+            <div class="logo"><h2>Bediwe</h2></div>
             <nav>
+                <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -27,7 +33,7 @@
     </header>
     <!-- End Header -->
     <!-- Start Main -->
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
             <div class="info">
                 <p>Hello, I'm Mohamed Bediwe</p>
@@ -35,9 +41,9 @@
                 <p class="description">I bulid user-interfaces and websites</p>
                 <a href="#projects" class="view-work">View my work</a>
                 <div class="social">
-                    <a href="https://linkedin.com/in/mohamed-bediwe-518596180"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://facebook.com/mohammed.bediwe"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://github.com/MohamedBediwe"><i class="fab fa-github-square"></i></a>
+                    <a href="https://linkedin.com/in/mohamed-bediwe-518596180" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com/mohammed.bediwe" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://github.com/MohamedBediwe" target="_blank"><i class="fab fa-github-square"></i></a>
                 </div>
             </div>
             <div class="image">
@@ -45,50 +51,75 @@
         </div>
     </section>
     <!-- End Main -->
+    <!-- Start About -->
+    <section class="about" id="about">
+        <h1 class="main-heading">About</h1>
+        <div class="container">
+            <h2>I'm Mohamed Bediwe</h2>
+            <h5>I'm very ambitious and ready for new challenges.</h5>
+            <p>I'm a Front-end Web Developer, I'm 22 years old.</p>
+            <p>I describe myself as a passionate developer who loves coding.</p>
+            <p>I'm studing at the faculty of engineering alexu</p>
+            <p>I'm currently looking for a new opportunity.</p>
+            <a href="#" class="cv">Download My CV</a>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Scroll To Top Button -->
+    <section class="scroll-to-top">
+        <i class="fas fa-angle-up"></i>
+    </section>
     <!-- Start skills -->
     <section class="skills" id="skills">
         <h1 class="main-heading">Skills</h1>
         <div class="container">
-            <div class="image">
-                <img src="images/skills.png" alt="Skills" />
+            <div class="skill">
+                <img src="./images/html.png" alt="html">
+                <h3>HTML</h3>
             </div>
-            <div class="skills-box">
-                <div class="skill">
-                    <h3>HTML <span>70%</span></h3>
-                    <div class="progress"><span style="width:70%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>CSS <span>75%</span></h3>
-                    <div class="progress"><span style="width:75%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>JavaScript <span>65%</span></h3>
-                    <div class="progress"><span style="width:65%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>React <span>25%</span></h3>
-                    <div class="progress"><span style="width:25%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>Bootstrap <span>15%</span></h3>
-                    <div class="progress"><span style="width:15%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>Ajax <span>20%</span></h3>
-                    <div class="progress"><span style="width:20%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>JSON <span>85%</span></h3>
-                    <div class="progress"><span style="width:85%"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>Sass <span>10%</span></h3>
-                    <div class="progress"><span style="width:10%"></span></div>
-                </div>
+            <div class="skill">
+                <img src="./images/css2.jpg" alt="css">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/js.png" alt="javascript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/react.png" alt="react">
+                <h3>React</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/bootstrap.svg" alt="bootstrap">
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/sass1.png" alt="sass">
+                <h3>Sass</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/git.png" alt="git">
+                <h3>Git</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/gihub.png" alt="github">
+                <h3>Github</h3>
             </div>
         </div>
     </section>
     <!-- End Services -->
+    <!-- Start Projects -->
+    <section class="projects" id="projects">
+        <h1 class="main-heading">Projects</h1>
+        <div class="container"></div>
+    </section>
+    <!-- End Projects -->
+    <!-- Start Footer -->
+    <footer id="contact">
+        <div class="container">
+        </div>
+    </footer>
+    <!-- End Footer -->
     <script src="app.js"></script>
 </body>
 </html>
