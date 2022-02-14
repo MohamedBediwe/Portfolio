@@ -178,6 +178,7 @@ header .bars {
   display: none;
   color: var(--white);
 }
+
 @media (max-width: 767px) {
   header .bars {
     display: block;
@@ -201,7 +202,8 @@ header.scrolled {
   background-color: var(--white);
 }
 header.scrolled .logo h2,
-header.scrolled .logo::before {
+header.scrolled .logo::before,
+header.scrolled .bars {
   color: var(--red);
 }
 header.scrolled nav a {
@@ -409,7 +411,7 @@ section.scroll-to-top i {
   100% {
     left: 50%;
     width: 50%;
-    height: calc(100% + 5px);
+    height: calc(100% + 1px);
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -424,14 +426,14 @@ section.scroll-to-top i {
     width: 15px;
   }
   50% {
-    right: 50%;
+    right: 49%;
     width: 15px;
     height: 15px;
   }
   100% {
-    right: 50%;
-    width: 50%;
-    height: calc(100% + 5px);
+    right: 49%;
+    width: 51%;
+    height: calc(100% + 1px);
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
