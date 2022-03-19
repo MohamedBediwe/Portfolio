@@ -1,10 +1,6 @@
-const bars = document.querySelector('.bars');
 const nav = document.querySelector('nav');
 const header = document.querySelector('header')
 const scrollToTop = document.querySelector('.scroll-to-top')
-bars.addEventListener('click', function () {
-    nav.classList.toggle('active');
-})
 
 window.onscroll = function () {
     if (window.scrollY >= 600) {
@@ -12,7 +8,7 @@ window.onscroll = function () {
     } else {
         scrollToTop.style.display = "none";
     }
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 450) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');

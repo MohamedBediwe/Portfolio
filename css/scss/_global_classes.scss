@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+.main-heading {
+  color: $black;
+  margin-bottom: 30px;
+  padding: 10px 25px;
+  margin-inline: auto;
+  border: $border;
+  width: fit-content;
+  cursor: default;
+  background: linear-gradient(to right, $red, $red 50%, $blue 50%, $blue);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  background-position: 0%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  color: $black;
+  &:hover {
+    color: $white;
+    background-position: 100%;
+  }
+}
+
+%box-hover {
+  transform: $translate;
+  -webkit-transform: $translate;
+  -moz-transform: $translate;
+  -ms-transform: $translate;
+  -o-transform: $translate;
+  box-shadow: $box-shadow;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: $white;
+  background-color: $blue;
+  padding: 10px 15px;
+  cursor: pointer;
+}

@@ -19,18 +19,9 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-
-body {
-  margin: 0;
-}
-
 /**
  * Render the `main` element consistently in IE.
  */
-
-main {
-  display: block;
-}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -50,21 +41,10 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
 
 /* Text-level semantics
    ========================================================================== */
@@ -72,10 +52,6 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-
-a {
-  background-color: transparent;
-}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -92,22 +68,10 @@ abbr[title] {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-b,
-strong {
-  font-weight: bolder;
-}
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
 
 /**
  * Add the correct font size in all browsers.
@@ -122,32 +86,12 @@ small {
  * all browsers.
  */
 
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
 /* Embedded content
    ========================================================================== */
 
 /**
  * Remove the border on images inside links in IE 10.
  */
-
-img {
-  border-style: none;
-}
 
 /* Forms
    ========================================================================== */
@@ -174,7 +118,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +129,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -313,37 +259,5 @@ textarea {
 /* Interactive
    ========================================================================== */
 
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
 /* Misc
    ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}

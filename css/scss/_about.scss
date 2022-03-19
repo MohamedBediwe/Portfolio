@@ -1,0 +1,66 @@
+@use "./global_classes";
+@use "./variables" as *;
+.about {
+  background-color: $grey;
+  .main-heading {
+    background: linear-gradient(
+      to right,
+      $green1,
+      $green1 50%,
+      $blue 50%,
+      $blue
+    );
+    background-size: 200%;
+    background-position: 0%;
+    &:hover {
+      color: $white;
+      background-position: 100%;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 10px;
+      color: $blue;
+    }
+    h5 {
+      color: $red;
+      margin-bottom: 10px;
+    }
+    p {
+      color: $green3;
+      margin: 5px;
+    }
+  }
+  a.cv {
+    display: block;
+    color: $red;
+    padding: 15px 20px;
+    width: fit-content;
+    margin-top: 25px;
+    border: $border;
+    font-weight: bold;
+    transition: $hover-transition;
+    -webkit-transition: $hover-transition;
+    -moz-transition: $hover-transition;
+    -ms-transition: $hover-transition;
+    -o-transition: $hover-transition;
+    margin-inline: auto;
+    background-color: $white;
+    &:hover {
+      transform: $translate;
+      -webkit-transform: $translate;
+      -moz-transform: $translate;
+      -ms-transform: $translate;
+      -o-transform: $translate;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .dots {
+    display: none;
+  }
+}

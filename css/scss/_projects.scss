@@ -1,0 +1,72 @@
+@use "./variables" as *;
+
+.projects {
+  background-color: $white;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    .project {
+      position: relative;
+      max-height: 325px;
+      overflow: hidden;
+      .info {
+        width: 100%;
+        position: absolute;
+        height: 50%;
+        background-color: $green4;
+        top: 50%;
+        left: -100%;
+        transform: translateY(-50%);
+        padding: 15px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        h2 {
+          margin-bottom: 15px;
+        }
+        p {
+          color: #e1e1e1;
+          margin-bottom: 15px;
+        }
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          i {
+            color: $red;
+          }
+        }
+      }
+      &:hover .info {
+        left: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    .container {
+      gap: 25px;
+      .project {
+        max-height: 500px;
+      }
+    }
+  }
+}

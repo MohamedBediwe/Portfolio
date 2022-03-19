@@ -1,0 +1,135 @@
+@use "./global_classes";
+@use "./variables" as *;
+header {
+  height: 72px;
+  background-color: $black;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    .logo {
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+      width: 92px;
+      height: 30px;
+      &::before {
+        content: "Bediwe";
+        text-transform: uppercase;
+        color: $white;
+        position: absolute;
+        left: -100px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+      h2 {
+        color: $white;
+        text-transform: uppercase;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        position: absolute;
+        left: 0;
+      }
+      &:hover {
+        h2 {
+          left: 100px;
+        }
+        &::before {
+          left: 0;
+        }
+      }
+    }
+    nav {
+      display: flex;
+      > div {
+        > a {
+          font-size: 1.25em;
+          color: $white;
+          transition: $nav-transtion;
+          -webkit-transition: $nav-transtion;
+          -moz-transition: $nav-transtion;
+          -ms-transition: $nav-transtion;
+          -o-transition: $nav-transtion;
+          position: relative;
+          overflow: hidden;
+          height: 72px;
+          display: flex;
+          padding: 0 30px;
+          justify-content: center;
+          align-items: center;
+          &::before {
+            content: "";
+            width: 100%;
+            position: absolute;
+            left: -100%;
+            top: 0;
+            height: 4px;
+            background-color: $red;
+            transition: $nav-transtion;
+          }
+          &:hover {
+            background-color: #010101;
+            color: $green1;
+            &::before {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 80px;
+    .container {
+      flex-direction: column;
+      .logo {
+        padding-top: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        margin: auto;
+        > div {
+          > a {
+            padding: 10px;
+            font-size: 14px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+header.scrolled {
+  position: sticky;
+  top: 0;
+  animation: opacity-fade 0.5s ease-in 1 forwards;
+  -webkit-animation: opacity-fade 0.5s ease-in 1 forwards;
+  background-color: $red;
+  z-index: 9999;
+}
+
+@keyframes opacity-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

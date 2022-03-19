@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is the portofolio for Developer Mohamed Bediwe">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Meta tag to change theme color -->
     <meta name="theme-color" content="#3a6cf4">
     <!-- Link tag to change the website icon -->
@@ -21,14 +25,11 @@
         <div class="container">
             <div class="logo"><h2>Bediwe</h2></div>
             <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <div><a href="#about">About</a></div>
+                <div><a href="#skills">Skills</a></div>
+                <div><a href="#projects">Projects</a></div>
+                <div><a href="#contact">Contact</a></div>
             </nav>
-            <div class="bars">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </header>
     <!-- End Header -->
@@ -41,12 +42,13 @@
                 <p class="description">I bulid user-interfaces and websites</p>
                 <a href="#projects" class="view-work">View my work</a>
                 <div class="social">
-                    <a href="https://linkedin.com/in/mohamed-bediwe-518596180" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://facebook.com/mohammed.bediwe" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://github.com/MohamedBediwe" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://linkedin.com/in/mohamed-bediwe-518596180" target="_blank" class="linkedin"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://facebook.com/mohammed.bediwe" target="_blank" class="facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    <a href="https://github.com/MohamedBediwe" target="_blank" class="github"><i class="fab fa-github-square fa-3x"></i></a>
                 </div>
             </div>
             <div class="image">
+                <img src="./images/myImage.webp" alt="Mohamed Bediwe">
             </div>
         </div>
     </section>
@@ -55,38 +57,43 @@
     <section class="about" id="about">
         <h1 class="main-heading">About</h1>
         <div class="container">
-            <h2>I'm Mohamed Bediwe</h2>
-            <h5>I'm very ambitious and ready for new challenges.</h5>
-            <p>I'm a Front-end Web Developer, I'm 22 years old.</p>
-            <p>I describe myself as a passionate developer who loves coding.</p>
-            <p>I'm studing at the faculty of engineering alexu</p>
-            <p>I'm currently looking for a new opportunity.</p>
-            <a target="_blank" href="https://drive.google.com/uc?id=17Fk9-TkuLJvPGHAFriO5uUW3JZ18erxe&export=download" class="cv">Download My CV</a>
+            <div class="text">
+                <h2>I'm Mohamed Bediwe</h2>
+                <h5>I'm very ambitious and ready for new challenges.</h5>
+                <p>I'm a Front-end Web Developer, I'm 22 years old.</p>
+                <p>I describe myself as a passionate developer who loves coding.</p>
+                <p>I'm studing at the faculty of engineering alexu</p>
+                <p>I'm currently looking for a new opportunity.</p>
+            </div>
+            <div class="dots">
+                <img src="./images/dots.webp" alt="dots">
+            </div>
         </div>
+        <a target="_blank" href="https://drive.google.com/file/d/17Fk9-TkuLJvPGHAFriO5uUW3JZ18erxe/view?usp=sharing" class="cv">Download My CV</a>
     </section>
     <!-- End About -->
     <!-- Scroll To Top Button -->
     <section class="scroll-to-top">
-        <i class="fas fa-angle-up"></i>
+        <i class="fas fa-angle-up fa-2x"></i>
     </section>
     <!-- Start skills -->
     <section class="skills" id="skills">
         <h1 class="main-heading">Skills</h1>
         <div class="container">
             <div class="skill">
-                <img src="./images/html.png" alt="html">
+                <img src="./images/html.webp" alt="html">
                 <h3>HTML</h3>
             </div>
             <div class="skill">
-                <img src="./images/css2.jpg" alt="css">
+                <img src="./images/css2.webp" alt="css">
                 <h3>CSS</h3>
             </div>
             <div class="skill">
-                <img src="./images/js.png" alt="javascript">
+                <img src="./images/js.webp" alt="javascript">
                 <h3>JavaScript</h3>
             </div>
             <div class="skill">
-                <img src="./images/react.png" alt="react">
+                <img src="./images/react.webp" alt="react">
                 <h3>React</h3>
             </div>
             <div class="skill">
@@ -94,32 +101,126 @@
                 <h3>Bootstrap</h3>
             </div>
             <div class="skill">
-                <img src="./images/sass1.png" alt="sass">
+                <img src="./images/sass1.webp" alt="sass">
                 <h3>Sass</h3>
             </div>
             <div class="skill">
-                <img src="./images/git.png" alt="git">
+                <img src="./images/git.webp" alt="git">
                 <h3>Git</h3>
             </div>
             <div class="skill">
-                <img src="./images/gihub.png" alt="github">
+                <img src="./images/github.webp" alt="github">
                 <h3>Github</h3>
+            </div>
+            <div class="skill">
+                <img src="./images/tailwindcss-icon.svg" alt="Tailwind css">
+                <h3>Tailwind css</h3>
             </div>
         </div>
     </section>
-    <!-- End Services -->
+    <!-- End Skills -->
     <!-- Start Projects -->
     <section class="projects" id="projects">
         <h1 class="main-heading">Projects</h1>
-        <div class="container"></div>
+        <div class="container">
+            <div class="project">
+                <img src="./images/weather.webp" alt="Weather-app-image">
+                <div class="info">
+                    <h2 class="title">Weather App</h2>
+                    <p class="description">
+                        This Application made by using HTML, CSS, JavaScript with weather api.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Weather-App" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Weather-App/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/todo1.webp" alt="Todo-App-image">
+                <div class="info">
+                    <h2 class="title">ToDo App</h2>
+                    <p class="description">
+                        This Application made by using HTML, CSS, JavaScript.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Todo-App" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Todo-App/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/Elzero.webp" alt="Elzero template">
+                <div class="info">
+                    <h2 class="title">Elzero template</h2>
+                    <p class="description">
+                        This Application made by using HTML, CSS, JavaScript.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Elzero-Web-School-Template" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Elzero-Web-School-Template/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/Bondi.webp" alt="Bondi template">
+                <div class="info">
+                    <h2 class="title">Bondi template</h2>
+                    <p class="description">
+                        This Application made by using Bootstrap v5.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Bondi-template" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Bondi-template/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/Leon.webp" alt="Leon template">
+                <div class="info">
+                    <h2 class="title">Bondi template</h2>
+                    <p class="description">
+                        This Application made by using HTML, CSS.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Leon-Template" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Leon-template/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./images/Kasper.webp" alt="Kasper template">
+                <div class="info">
+                    <h2 class="title">Kasper template</h2>
+                    <p class="description">
+                        This Application made by using HTML, CSS.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/MohamedBediwe/Kasper-Template" class="github"><i class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://mohamedbediwe.github.io/Kasper-Template/" class="live"><i class="fas fa-eye fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Projects -->
-    <!-- Start Footer -->
-    <footer id="contact">
+    <!-- Start Contact -->
+    <section class="contact" id="contact">
         <div class="container">
+            <div class="social">
+                <div>
+                <a href="https://linkedin.com/in/mohamed-bediwe-518596180" target="_blank" class="linkedin"><i
+                        class="fab fa-linkedin fa-2x"></i></a>Mohamed Bediwe</div>
+                <div><a href="https://facebook.com/mohammed.bediwe" target="_blank" class="facebook"><i
+                        class="fab fa-facebook-square fa-2x"></i></a>محمد بديوي</div>
+                <div><a href="https://github.com/MohamedBediwe" target="_blank" class="github"><i
+                        class="fab fa-github-square fa-2x"></i></a>MohamedBediwe</div>
+                <div><a href="mailto:mohamed.bediwe@gmail.com" class="mail"><i class="far fa-envelope fa-2x"></i></a>mohamed.bediwe@gamil.com</div>
+                <div><a href="tel:+201203290058" class="mobile"><i class="fas fa-mobile-alt fa-2x"></i></a>01203290058</div>
+            </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </section>
+    <!-- End Contact -->
     <script src="app.js"></script>
 </body>
 </html>
