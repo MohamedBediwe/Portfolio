@@ -2,9 +2,7 @@
 @use "./variables" as *;
 
 .skills {
-  background-color: $black;
-  .main-heading {
-  }
+  background-color: $white;
   .container {
     display: flex;
     justify-content: center;
@@ -18,7 +16,7 @@
     height: 200px;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid $red;
+    border: 2px solid $blue;
     padding-block: 10px;
     transition: $hover-transition;
     -webkit-transition: $hover-transition;
@@ -33,12 +31,11 @@
     }
     h3 {
       font-size: 1.2em;
-      color: $red;
+      color: $blue;
     }
     &:hover {
       @extend %box-hover;
-      box-shadow: -8px 8px 0px $red;
-      border-color: black;
+      box-shadow: -8px 8px 0px $blue;
     }
   }
 }
