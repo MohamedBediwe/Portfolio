@@ -3,12 +3,17 @@
 .projects {
   background-color: $grey;
   .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     .project {
       position: relative;
       max-height: 325px;
+      width: 300px;
       overflow: hidden;
       .info {
         width: 100%;

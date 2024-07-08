@@ -6,15 +6,15 @@
   .container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   .skill {
     display: flex;
     flex-direction: column;
     height: 200px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 2px solid $blue;
     padding-block: 10px;
@@ -23,11 +23,12 @@
     -moz-transition: $hover-transition;
     -ms-transition: $hover-transition;
     -o-transition: $hover-transition;
-    min-width: 150px;
-    max-width: 200px;
     background-color: $white;
+    width: 175px;
+    max-width: 200px;
     img {
       max-width: 75%;
+      max-height: 100px;
     }
     h3 {
       font-size: 1.2em;
@@ -38,7 +39,4 @@
       box-shadow: -8px 8px 0px $blue;
     }
   }
-}
-.skill img {
-  max-width: 100%;
 }

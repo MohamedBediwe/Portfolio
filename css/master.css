@@ -1,0 +1,8 @@
+@use "./scss/global-rules";
+@use "./scss/header";
+@use "./scss/main-setion";
+@use "./scss/skills";
+@use "./scss/projects";
+@use "./scss/contact";
+@use "./scss/about";
+/*# sourceMappingURL=master.css.map */
